@@ -1,0 +1,27 @@
+﻿
+@using ALMACEN
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+ @{
+    List<Verdura> verduras = (List<Verdura>)ViewBag.verduras;
+}
+
+<table>
+    <tr>
+        <th>nombre verdura</th>
+        <th>color</th>
+        <th>precio</th>
+    </tr>
+   @foreach(var i in verduras){
+    <tr>
+        <td>@i.Nombre</td>
+        <td>@i.Color</td>
+        <td>@i.Precio</td>
+
+    </tr>
+   }
+
+</table>
