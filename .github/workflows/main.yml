@@ -49,8 +49,8 @@ jobs:
         env:                                            
           SC_CONTROLLER_URL: ${{ secrets.SC_CONTROLLER_URL }}
           SSC_UPLOAD_TOKEN: ${{ secrets.SSC_UPLOAD_TOKEN }}
-          APPLICATION:  ${{ secrets.SSC_APP }}
-          VERSION:  ${{ secrets.SSC_APPVERSION }}
+          APPLICATION: "My Application"
+          VERSION: "1.0"
           BUILD_OPTS: "-bt mvn"
 
       ### Archive ScanCentral Client logs on failure ###
